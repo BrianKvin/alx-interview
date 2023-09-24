@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """a function that returns the perimeter"""
- 
+
+
 def island_perimeter(grid):
     """
     Returns the perimeter of the island.
@@ -10,4 +11,3 @@ def island_perimeter(grid):
         for i1, i2 in zip([0] + row, row + [0]):
             area += int(i1 != i2)
     return area
-
