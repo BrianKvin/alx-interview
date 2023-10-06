@@ -7,12 +7,12 @@ contain keys to the other boxes.
 """
 
 
-def canUnLockAll(boxes):
+def canUnlockAll(boxes):
     """a method determining if all the boxes can be opened"""
     if not boxes or type(boxes) is not list:
         return False
 
-    unlock = [0]
+    unlocked = [0]
     for n in unlocked:
         for key in boxes[n]:
             if key not in unlocked and key < len(boxes):
